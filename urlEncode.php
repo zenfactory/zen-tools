@@ -12,7 +12,7 @@ $output = "";
 # Remove the first element from the array
 foreach ($input as $parameter => $argument)
 { 
-	if ($parameter != 1)
+	if ($parameter != 0)
 	{
 		$output .= $argument;
 	}

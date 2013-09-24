@@ -2,7 +2,7 @@
 
 # Check to make sure we have everything we need
 echo "$#"
-if [ "$#" == 4 ]
+if [ "$#" == 6 ]
 then
 
 	###
@@ -13,10 +13,11 @@ then
 	port=$1
 	user=$2
 	host=$3
-	keyFile=$4
+	keyFile="$4 $5 $6"
 
 	# Generate url encoded string from keyfile
-	keyString=`php urlEncode.php $(cat ~/.ssh/id_rsa.pub)`
+	#keyString=`php urlEncode.php $(cat ~/.ssh/id_rsa.pub)`
+	keyString="$(perl -MURI::Escape -e 'print uri_escape($keyFile);')"
 	echo $keyString
 
 	# Send key to remote host and append it to the authorized key's file
