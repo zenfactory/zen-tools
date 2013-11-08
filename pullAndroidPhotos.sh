@@ -3,7 +3,7 @@
 ###
 # Make sure adb is installed
 ###
-sudo apt-get install android-tools-adb
+#sudo apt-get install android-tools-adb
 
 ###
 # Define image locationes
@@ -22,4 +22,4 @@ cameraDir="/storage/sdcard0/DCIM/Camera/"
 mkdir $imgRoot/$imgDir
 
 # Pull images from android device to directory created above
-adb pull $cameraDir $imgRoot/$imgDir
+sudo /home/hassan/bin/android-studio/sdk/platform-tools/adb pull $cameraDir $imgRoot/$imgDir

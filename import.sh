@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Defines
-GUID=1111
+GUID=12111
 imgExt='jpg'
-imgDir='date-1378538859'
+imgDir='date-1383901636'
 
 # Print CSV Header
 echo "guid,title,description,path"

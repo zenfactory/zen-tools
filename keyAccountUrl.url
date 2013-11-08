@@ -1,0 +1,1 @@
+https://api.digitalocean.com/ssh_keys/new/?name=22&ssh_pub_key=/home/hassan/.ssh/id_ecdsa.pub &client_id=hassan&api_key=162.243.65.131
