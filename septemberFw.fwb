@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE FWObjectDatabase SYSTEM "fwbuilder.dtd">
+<<<<<<< HEAD
 <FWObjectDatabase xmlns="http://www.fwbuilder.org/1.0/" version="22" lastModified="1385157733" id="root">
+=======
+<FWObjectDatabase xmlns="http://www.fwbuilder.org/1.0/" version="22" lastModified="1385156564" id="root">
+>>>>>>> bcbca3fe74605749e9541637d0345df0ecf133c2
   <Library id="syslib000" color="#d4f8ff" name="Standard" comment="Standard objects" ro="True">
     <AnyNetwork id="sysid0" name="Any" comment="Any Network" ro="False" address="0.0.0.0" netmask="0.0.0.0"/>
     <AnyIPService id="sysid1" protocol_num="0" name="Any" comment="Any IP Service" ro="False"/>
@@ -435,6 +439,7 @@
       <Interval id="id3C63479E" days_of_week="0" from_day="-1" from_hour="0" from_minute="0" from_month="-1" from_weekday="0" from_year="-1" to_day="-1" to_hour="23" to_minute="59" to_month="-1" to_weekday="0" to_year="-1" name="Sun" comment="" ro="False"/>
     </IntervalGroup>
   </Library>
+<<<<<<< HEAD
   <Library id="sysid99" name="Deleted Objects" comment="" ro="False">
     <Host id="id7769X1899" name="ftp.us.debian.org" comment="" ro="False">
       <Interface id="id7771X1899" dedicated_failover="False" dyn="False" label="debrepo" security_level="0" unnum="False" unprotected="False" name="debian repo" comment="" ro="False">
@@ -510,12 +515,51 @@
             </Src>
             <Dst neg="False">
               <ObjectRef ref="id7275X1899"/>
+=======
+  <Library id="sysid99" name="Deleted Objects" comment="" ro="False"/>
+  <Library id="id1582X1899" color="#d2ffd0" name="User" comment="" ro="False">
+    <ObjectGroup id="id1583X1899" name="Objects" comment="" ro="False">
+      <ObjectGroup id="id1584X1899" name="Addresses" comment="" ro="False"/>
+      <ObjectGroup id="id1585X1899" name="DNS Names" comment="" ro="False"/>
+      <ObjectGroup id="id1586X1899" name="Address Tables" comment="" ro="False"/>
+      <ObjectGroup id="id1587X1899" name="Groups" comment="" ro="False"/>
+      <ObjectGroup id="id1588X1899" name="Hosts" comment="" ro="False"/>
+      <ObjectGroup id="id1589X1899" name="Networks" comment="" ro="False"/>
+      <ObjectGroup id="id1590X1899" name="Address Ranges" comment="" ro="False"/>
+    </ObjectGroup>
+    <ServiceGroup id="id1591X1899" name="Services" comment="" ro="False">
+      <ServiceGroup id="id1592X1899" name="Groups" comment="" ro="False"/>
+      <ServiceGroup id="id1593X1899" name="ICMP" comment="" ro="False"/>
+      <ServiceGroup id="id1594X1899" name="IP" comment="" ro="False"/>
+      <ServiceGroup id="id1595X1899" name="TCP" comment="" ro="False"/>
+      <ServiceGroup id="id1596X1899" name="UDP" comment="" ro="False"/>
+      <ServiceGroup id="id1597X1899" name="Users" comment="" ro="False"/>
+      <ServiceGroup id="id1598X1899" name="Custom" comment="" ro="False"/>
+      <ServiceGroup id="id1599X1899" name="TagServices" comment="" ro="False"/>
+    </ServiceGroup>
+    <ObjectGroup id="id1600X1899" name="Firewalls" comment="" ro="False">
+      <Firewall id="id4259X1899" host_OS="linux24" inactive="False" lastCompiled="0" lastInstalled="0" lastModified="1268942517" platform="iptables" version="" name="september" comment="This template is intended for a simple server with one interface. &quot;Assume firewall is part of any&quot;&#10;option is off, IP forwarding is off." ro="False">
+        <NAT id="id4278X1899" name="NAT" comment="" ro="False" ipv4_rule_set="False" ipv6_rule_set="False" top_rule_set="True">
+          <RuleSetOptions/>
+        </NAT>
+        <Policy id="id4281X1899" name="Policy" comment="" ro="False" ipv4_rule_set="False" ipv6_rule_set="False" top_rule_set="True">
+          <PolicyRule id="id4283X1899" disabled="False" group="" log="True" position="0" action="Deny" direction="Inbound" comment="">
+            <Src neg="False">
+              <ObjectRef ref="id4259X1899"/>
+            </Src>
+            <Dst neg="False">
+              <ObjectRef ref="id4259X1899"/>
+>>>>>>> bcbca3fe74605749e9541637d0345df0ecf133c2
             </Dst>
             <Srv neg="False">
               <ServiceRef ref="sysid1"/>
             </Srv>
             <Itf neg="False">
+<<<<<<< HEAD
               <ObjectRef ref="id7283X1899"/>
+=======
+              <ObjectRef ref="id4267X1899"/>
+>>>>>>> bcbca3fe74605749e9541637d0345df0ecf133c2
             </Itf>
             <When neg="False">
               <IntervalRef ref="sysid2"/>
@@ -548,7 +592,11 @@
               <Option name="ulog_nlgroup">1</Option>
             </PolicyRuleOptions>
           </PolicyRule>
+<<<<<<< HEAD
           <PolicyRule id="id7327X1899" disabled="False" group="" log="False" position="1" action="Accept" direction="Both" comment="">
+=======
+          <PolicyRule id="id4311X1899" disabled="False" group="" log="False" position="1" action="Accept" direction="Both" comment="">
+>>>>>>> bcbca3fe74605749e9541637d0345df0ecf133c2
             <Src neg="False">
               <ObjectRef ref="sysid0"/>
             </Src>
@@ -559,7 +607,11 @@
               <ServiceRef ref="sysid1"/>
             </Srv>
             <Itf neg="False">
+<<<<<<< HEAD
               <ObjectRef ref="id7286X1899"/>
+=======
+              <ObjectRef ref="id4270X1899"/>
+>>>>>>> bcbca3fe74605749e9541637d0345df0ecf133c2
             </Itf>
             <When neg="False">
               <IntervalRef ref="sysid2"/>
@@ -592,18 +644,29 @@
               <Option name="ulog_nlgroup">1</Option>
             </PolicyRuleOptions>
           </PolicyRule>
+<<<<<<< HEAD
           <PolicyRule id="id7355X1899" disabled="False" group="" log="False" position="2" action="Accept" direction="Both" comment="">
+=======
+          <PolicyRule id="id4339X1899" disabled="False" group="" log="False" position="2" action="Accept" direction="Both" comment="">
+>>>>>>> bcbca3fe74605749e9541637d0345df0ecf133c2
             <Src neg="False">
               <ObjectRef ref="sysid0"/>
             </Src>
             <Dst neg="False">
+<<<<<<< HEAD
               <ObjectRef ref="id7275X1899"/>
+=======
+              <ObjectRef ref="id4259X1899"/>
+>>>>>>> bcbca3fe74605749e9541637d0345df0ecf133c2
             </Dst>
             <Srv neg="False">
               <ServiceRef ref="tcp-HTTP"/>
               <ServiceRef ref="tcp-SSH"/>
               <ServiceRef ref="sg-Useful_ICMP"/>
+<<<<<<< HEAD
               <ServiceRef ref="id3B4FED69"/>
+=======
+>>>>>>> bcbca3fe74605749e9541637d0345df0ecf133c2
             </Srv>
             <Itf neg="False">
               <ObjectRef ref="sysid0"/>
@@ -613,9 +676,15 @@
             </When>
             <PolicyRuleOptions/>
           </PolicyRule>
+<<<<<<< HEAD
           <PolicyRule id="id7385X1899" disabled="False" group="" log="False" position="3" action="Accept" direction="Both" comment="server needs DNS to back-resolve clients IPs.&#10;Even if it does not log host names during its&#10;normal operations, statistics scripts such as&#10;webalizer need it for reporting.">
             <Src neg="False">
               <ObjectRef ref="id7275X1899"/>
+=======
+          <PolicyRule id="id4369X1899" disabled="False" group="" log="False" position="3" action="Accept" direction="Both" comment="server needs DNS to back-resolve clients IPs.&#10;Even if it does not log host names during its&#10;normal operations, statistics scripts such as&#10;webalizer need it for reporting.">
+            <Src neg="False">
+              <ObjectRef ref="id4259X1899"/>
+>>>>>>> bcbca3fe74605749e9541637d0345df0ecf133c2
             </Src>
             <Dst neg="False">
               <ObjectRef ref="sysid0"/>
@@ -631,9 +700,15 @@
             </When>
             <PolicyRuleOptions/>
           </PolicyRule>
+<<<<<<< HEAD
           <PolicyRule id="id7413X1899" disabled="False" group="" log="False" position="4" action="Accept" direction="Both" comment="this rule allows the server to send&#10;statistics and reports via email. Disable&#10;this rule if you do not need it.">
             <Src neg="False">
               <ObjectRef ref="id7275X1899"/>
+=======
+          <PolicyRule id="id4397X1899" disabled="False" group="" log="False" position="4" action="Accept" direction="Both" comment="this rule allows the server to send&#10;statistics and reports via email. Disable&#10;this rule if you do not need it.">
+            <Src neg="False">
+              <ObjectRef ref="id4259X1899"/>
+>>>>>>> bcbca3fe74605749e9541637d0345df0ecf133c2
             </Src>
             <Dst neg="False">
               <ObjectRef ref="sysid0"/>
@@ -649,12 +724,20 @@
             </When>
             <PolicyRuleOptions/>
           </PolicyRule>
+<<<<<<< HEAD
           <PolicyRule id="id7441X1899" disabled="False" group="" log="False" position="5" action="Reject" direction="Both" comment="this rejects auth (ident) queries that remote&#10;mail relays may send to this server when it&#10;tries to send email out.">
+=======
+          <PolicyRule id="id4425X1899" disabled="False" group="" log="False" position="5" action="Reject" direction="Both" comment="this rejects auth (ident) queries that remote&#10;mail relays may send to this server when it&#10;tries to send email out.">
+>>>>>>> bcbca3fe74605749e9541637d0345df0ecf133c2
             <Src neg="False">
               <ObjectRef ref="sysid0"/>
             </Src>
             <Dst neg="False">
+<<<<<<< HEAD
               <ObjectRef ref="id7275X1899"/>
+=======
+              <ObjectRef ref="id4259X1899"/>
+>>>>>>> bcbca3fe74605749e9541637d0345df0ecf133c2
             </Dst>
             <Srv neg="False">
               <ServiceRef ref="tcp-Auth"/>
@@ -693,12 +776,20 @@
               <Option name="ulog_nlgroup">1</Option>
             </PolicyRuleOptions>
           </PolicyRule>
+<<<<<<< HEAD
           <PolicyRule id="id7469X1899" disabled="False" group="" log="True" position="6" action="Deny" direction="Both" comment="">
+=======
+          <PolicyRule id="id4453X1899" disabled="False" group="" log="True" position="6" action="Deny" direction="Both" comment="">
+>>>>>>> bcbca3fe74605749e9541637d0345df0ecf133c2
             <Src neg="False">
               <ObjectRef ref="sysid0"/>
             </Src>
             <Dst neg="False">
+<<<<<<< HEAD
               <ObjectRef ref="id7275X1899"/>
+=======
+              <ObjectRef ref="id4259X1899"/>
+>>>>>>> bcbca3fe74605749e9541637d0345df0ecf133c2
             </Dst>
             <Srv neg="False">
               <ServiceRef ref="sysid1"/>
@@ -739,6 +830,7 @@
           </PolicyRule>
           <RuleSetOptions/>
         </Policy>
+<<<<<<< HEAD
         <Routing id="id7498X1899" name="Routing" comment="" ro="False" ipv4_rule_set="False" ipv6_rule_set="False" top_rule_set="True">
           <RuleSetOptions/>
         </Routing>
@@ -748,6 +840,17 @@
         </Interface>
         <Interface id="id7286X1899" dedicated_failover="False" dyn="False" label="loopback" security_level="100" unnum="False" unprotected="False" name="lo" comment="" ro="False">
           <IPv4 id="id7287X1899" name="september:lo:ipv4" comment="" ro="False" address="127.0.0.1" netmask="255.0.0.0"/>
+=======
+        <Routing id="id4482X1899" name="Routing" comment="" ro="False" ipv4_rule_set="False" ipv6_rule_set="False" top_rule_set="True">
+          <RuleSetOptions/>
+        </Routing>
+        <Interface id="id4267X1899" dedicated_failover="False" dyn="False" label="outside" mgmt="True" security_level="0" unnum="False" unprotected="False" name="eth0" comment="" ro="False">
+          <IPv4 id="id4268X1899" name="september:eth0:ipv4" comment="" ro="False" address="162.243.65.131" netmask="255.255.255.0"/>
+          <InterfaceOptions/>
+        </Interface>
+        <Interface id="id4270X1899" dedicated_failover="False" dyn="False" label="loopback" security_level="100" unnum="False" unprotected="False" name="lo" comment="" ro="False">
+          <IPv4 id="id4271X1899" name="september:lo:ipv4" comment="" ro="False" address="127.0.0.1" netmask="255.0.0.0"/>
+>>>>>>> bcbca3fe74605749e9541637d0345df0ecf133c2
           <InterfaceOptions/>
         </Interface>
         <Management address="192.168.1.10">
@@ -863,7 +966,12 @@
         </FirewallOptions>
       </Firewall>
     </ObjectGroup>
+<<<<<<< HEAD
     <ObjectGroup id="id5063X1899" name="Clusters" comment="" ro="False"/>
     <IntervalGroup id="id5064X1899" name="Time" comment="" ro="False"/>
+=======
+    <ObjectGroup id="id1601X1899" name="Clusters" comment="" ro="False"/>
+    <IntervalGroup id="id1602X1899" name="Time" comment="" ro="False"/>
+>>>>>>> bcbca3fe74605749e9541637d0345df0ecf133c2
   </Library>
 </FWObjectDatabase>
