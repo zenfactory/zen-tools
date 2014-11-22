@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Start firewall's now
-/home/hshirani/repo/zen-tools/fw-eth0.fw
-/home/hshirani/repo/zen-tools/fw-usb0.fw
-/home/hshirani/repo/zen-tools/fw-wlan0.fw
-/home/hshirani/repo/zen-tools/fw-wlan1.fw
+#/home/hshirani/repo/zen-tools/fw-eth0.fw
+#/home/hshirani/repo/zen-tools/fw-usb0.fw
+#/home/hshirani/repo/zen-tools/fw-wlan0.fw
+#/home/hshirani/repo/zen-tools/fw-wlan1.fw
 
 # Run root kit checkers  now
 chkrootkit > /root/security/logs/chkroot/chkroot-`date +%s`.txt
